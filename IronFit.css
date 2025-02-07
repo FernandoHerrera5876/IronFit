@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: #f8f8c3;
+}
+
+header {
+    background-color: black;
+    color: #9b870c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 25px;
+}
+
+header a{
+    text-decoration: none;
+    color: #9b870c;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.search-bar input {
+    border: none;
+    background: transparent;
+    outline: none;
+    padding: 5px;
+}
+
+.search-bar button {
+    background-color: #d8c9f8;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+nav {
+    background-color: #9b870c;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Contenido principal */
+main {
+    text-align: center;
+    padding: 20px;
+}
+
+.productos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    width: 100%;
+    padding: 20px;
+}
+
+.producto {
+    height: 130px;
+    background-color: #9b870c;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: #9b870c;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+/* Ubicación y Categorías como texto clickeable */
+.text-button {
+    display: block; /* Se apilan uno arriba del otro */
+    color: #9b870c;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px; /* Espaciado entre los botones */
+    transition: color 0.3s ease;
+}
+
+.text-button:hover {
+    color: #b8860b; /* Color dorado oscuro al pasar el mouse */
+}
+
+/* Asegurar que los textos a la izquierda estén alineados */
+.footer-section:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Sección "Nosotros" en el centro con justificación */
+.about {
+    text-align: justify;
+    max-width: 400px;
+}
+
+/* Redes Sociales con efecto */
+.social-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #9b870c;
+    border-radius: 50%;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+.social-button:hover {
+    background-color: #b8860b;
+    transform: scale(1.1);
+}
+
+/* Ajustar la alineación de los íconos a la derecha */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end;
+}

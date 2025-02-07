@@ -1,0 +1,86 @@
+/* Reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Fondo general */
+body {
+    background-color: #f8f8c3; /* Amarillo claro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    align-items: center;
+    gap: 80px; /* Más espacio entre el título y el formulario */
+}
+
+/* Título */
+h1 {
+    font-size: 40px;
+    color: black;
+    text-align: left;
+    margin-left: 50px;
+}
+
+/* Caja de registro */
+.register-box {
+    background-color: #9b870c; /* Dorado */
+    padding: 40px;
+    border-radius: 50px;
+    width: 450px; /* Más ancho */
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Ícono de usuario */
+.user-icon {
+    font-size: 50px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+/* Etiquetas */
+label {
+    display: block;
+    font-size: 16px;
+    color: black;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+/* Campos de entrada */
+input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #f8f8c3; /* Amarillo claro */
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Botón de aceptar */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #333;
+}
